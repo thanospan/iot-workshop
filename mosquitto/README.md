@@ -7,9 +7,9 @@ cd /path/to/iot-workshop/mosquitto
 docker compose up -d
 ```
 
-- The Mosquitto MQTT Broker is running at `localhost:1883`
+- The Mosquitto MQTT broker is running at `localhost:1883`
 
-  Note: When referencing from another Docker container running on a different Docker network (e.g., Node-RED), the host machine's IP address should be used instead of `localhost`.
+  Note: When referencing the MQTT broker from another Docker container running on a different Docker network (e.g., Node-RED), the host machine's IP address should be used instead of `localhost`.
 
 - Test using Docker:
   - Open a terminal and run an MQTT subscriber:

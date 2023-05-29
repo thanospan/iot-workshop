@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ff7cbaef-682c-4c0e-8152-9b5ec26fac1e",
+		"_postman_id": "0f9a1724-d6e6-42d3-beed-f141548f5e31",
 		"name": "IoT Workshop",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "9776101"
@@ -57,7 +57,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": \"urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0\",\r\n  \"type\": \"Device\",\r\n  \"deviceCategory\": [\"Sensor\"],\r\n  \"controlledProperty\": [\"occypancy\"]\r\n}",
+							"raw": "{\r\n  \"id\": \"urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0\",\r\n  \"type\": \"Device\",\r\n  \"deviceCategory\": [\"Sensor\"],\r\n  \"controlledProperty\": [\"occupancy\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

@@ -1,8 +1,13 @@
 # Node-RED
 
 ## Usage
-- Clone this repository.
+- Clone this repository:
+```
+https://github.com/thanospan/iot-workshop.git
+cd iot-workshop/node-red
+```
+
 - Run the containers:
 ```
-docker compose up
+docker compose up -d
 ```

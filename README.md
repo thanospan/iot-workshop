@@ -5,7 +5,7 @@
 - [Postman](https://www.postman.com/)
 
 ## Usage
-- Clone the repository:
+- Clone this repository:
 ```
 git clone https://github.com/thanospan/iot-workshop.git
 ```

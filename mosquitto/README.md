@@ -21,6 +21,11 @@ docker compose up -d
   docker run -it --rm --network="mosquitto" eclipse-mosquitto:2.0.15 mosquitto_pub -h mosquitto -p 1883 -t hello -m "Hello, World!"
   ```
 
+- Test using Node-RED:
+  - Open [Node-RED](http://localhost:1880) and [import](https://nodered.org/docs/user-guide/editor/workspace/import-export) the [provided flow](https://github.com/thanospan/iot-workshop/blob/main/node-red/flows.json).
+  
+    Note: If the MQTT nodes do not connect to the MQTT broker, change the MQTT broker's address from `host.docker.internal` to the host machine's IP.
+
 - Test using Python:
   - Requirements: [Python](https://www.python.org/), [Paho MQTT Python](https://github.com/eclipse/paho.mqtt.python)
   - An MQTT subscriber script is provided [here](https://github.com/thanospan/iot-workshop/blob/main/mosquitto/subscribe.py).

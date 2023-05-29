@@ -9,6 +9,14 @@ services:
     restart: unless-stopped
     ports:
       - 1880:1880
+    volumes:
+      - node-red-data:/data
+
+volumes:
+  node-red-data:
+    name: node-red-data
+    labels:
+      service: node-red
 
 networks:
   default:

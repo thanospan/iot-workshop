@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  node-red:
+    image: nodered/node-red:3.0.2
+    container_name: node-red
+    labels:
+      service: node-red
+    restart: unless-stopped
+    ports:
+      - 1880:1880
+
+networks:
+  default:
+    name: node-red
+    labels:
+      service: node-red

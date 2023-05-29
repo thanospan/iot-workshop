@@ -1,0 +1,55 @@
+FIWARE
+  Website
+    https://www.fiware.org/
+  GitHub repos
+    https://github.com/FIWARE/
+    https://github.com/FIWARE/catalogue
+    https://github.com/FIWARE/specifications
+    https://github.com/FIWARE/tutorials.NGSI-LD
+  Smart cities brochure
+    https://www.fiware.org/wp-content/uploads/Smart-Cities-Brochure-FIWARE.pdf
+  Smart cities reference architecture
+    https://www.fiware.org/wp-content/uploads/FIWARE_SmartCities_ReferenceArchitecture.png
+  Webinars
+    https://www.fiware.org/community/webinars/
+    https://www.youtube.com/@FIWARE/videos
+  Forums
+    https://ask.fiware.org/
+    https://stackoverflow.com/questions/tagged/fiware
+
+NGSI-LD
+  ETSI CIM
+    https://www.etsi.org/committee/cim
+  ETSI GS CIM 009 V1.6.1 (2022-08)
+    https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_CIM009v010601p.pdf
+  ETSI GS CIM 009 V1.3.1 (2020-08)
+    https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.03.01_60/gs_CIM009v010301p.pdf
+  Swagger
+    https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/FIWARE/specifications/master/OpenAPI/ngsi-ld/full_api.json
+  GitLab
+    https://forge.etsi.org/rep/NGSI-LD/NGSI-LD/
+  Core @context
+    https://uri.etsi.org/ngsi-ld/v1/
+
+Context brokers
+  Orion-LD
+    https://github.com/FIWARE/context.Orion-LD
+    https://hub.docker.com/r/fiware/orion-ld
+  Scorpio
+    https://github.com/ScorpioBroker/ScorpioBroker
+    https://hub.docker.com/r/scorpiobroker/scorpio/
+  Stellio
+    https://github.com/stellio-hub/stellio-context-broker
+    https://hub.docker.com/u/scorpiobroker
+  Implementation Status
+    https://docs.google.com/spreadsheets/d/18tq0_PZFl5WCfYUElcdI6M3Vlin4hP-M
+
+Smart Data Models
+  Website
+    https://smartdatamodels.org/
+  GitHub repos
+    https://github.com/smart-data-models
+  @context merger
+    https://smartdatamodels.org/index.php/generate-a-local-context-based-on-smart-data-models-iris/
+  Mapper
+    https://smartdatamodels.org/index.php/generate-acontext-based-on-external-ontologies-iris/

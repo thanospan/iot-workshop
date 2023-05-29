@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ff7cbaef-682c-4c0e-8152-9b5ec26fac1e",
+		"name": "IoT Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9776101"
+	},
+	"item": [
+		{
+			"name": "Entities",
+			"item": [
+				{
+					"name": "GET /entities",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Link",
+								"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld>; rel=\"http://www.w3.org/ns/json-ld#context\"; type=\"application/ld+json\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{context-broker}}/ngsi-ld/v1/entities?type=Device&options=keyValues",
+							"host": [
+								"{{context-broker}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "Device"
+								},
+								{
+									"key": "options",
+									"value": "keyValues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /entities",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Link",
+								"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld>; rel=\"http://www.w3.org/ns/json-ld#context\"; type=\"application/ld+json\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0\",\r\n  \"type\": \"Device\",\r\n  \"deviceCategory\": [\"Sensor\"],\r\n  \"controlledProperty\": [\"occypancy\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{context-broker}}/ngsi-ld/v1/entities",
+							"host": [
+								"{{context-broker}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /entities/{entityId}/attrs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Link",
+								"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld>; rel=\"http://www.w3.org/ns/json-ld#context\"; type=\"application/ld+json\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"value\": \"free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{context-broker}}/ngsi-ld/v1/entities/urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0/attrs",
+							"host": [
+								"{{context-broker}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /entities/{entityId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{context-broker}}/ngsi-ld/v1/entities/urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0",
+							"host": [
+								"{{context-broker}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Device:Parking-ca107848-7b50-4cf0-81b8-5855771239a0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "context-broker",
+			"value": "http://localhost:1026",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:4.4.21
+    container_name: fiware-mongo
+    labels:
+      service: fiware
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-db:/data/db
+      - mongo-config:/data/configdb
+
+  orion-ld:
+    image: fiware/orion-ld:1.2.1
+    container_name: fiware-orion-ld
+    labels:
+      service: fiware
+    restart: unless-stopped
+    ports:
+      - 1026:1026
+    command: -dbhost mongo -logLevel DEBUG
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-db:
+    name: fiware-mongo-db
+    labels:
+      service: fiware
+  mongo-config:
+    name: fiware-mongo-config
+    labels:
+      service: fiware
+
+networks:
+  default:
+    name: fiware
+    labels:
+      service: fiware

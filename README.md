@@ -1,9 +1,8 @@
 # IoT Workshop
 
 ## Requirements
-- Docker
-- Docker Compose
-- Postman (optional)
+- [Docker](https://www.docker.com/)
+- [Postman](https://www.postman.com/) (optional)
 
 ## Usage
 ```

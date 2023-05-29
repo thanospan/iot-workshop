@@ -1,8 +1,13 @@
 # FIWARE
 
 ## Usage
-- Clone this repository.
+- Clone this repository:
+```
+https://github.com/thanospan/iot-workshop.git
+cd iot-workshop/fiware
+```
+
 - Run the containers:
 ```
-docker compose up
+docker compose up -d
 ```

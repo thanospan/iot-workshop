@@ -2,7 +2,7 @@
 
 ## Requirements
 - [Docker](https://www.docker.com/)
-- [Postman](https://www.postman.com/) (optional)
+- [Postman](https://www.postman.com/)
 
 ## Usage
 - Clone the repository:

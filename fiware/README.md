@@ -7,7 +7,7 @@ cd /path/to/iot-workshop/fiware
 docker compose up -d
 ```
 
-- Orion-LD Context Broker: http://localhost:1026/ngsi-ld/v1/
+- The Orion-LD Context Broker is running at http://localhost:1026/ngsi-ld/v1/
 
   Note: When referencing from another Docker container running on a different Docker network (e.g., Node-RED), the host machine's IP address should be used instead of `localhost`.
 

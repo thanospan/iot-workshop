@@ -22,7 +22,7 @@ docker compose up -d
   ```
 
 - Test using Node-RED:
-  - Open [Node-RED](http://localhost:1880) and [import](https://nodered.org/docs/user-guide/editor/workspace/import-export) the [provided flow](https://github.com/thanospan/iot-workshop/blob/main/node-red/flows.json).
+  - Open [Node-RED](http://localhost:1880) and [import](https://nodered.org/docs/user-guide/editor/workspace/import-export) the [provided MQTT example flow](https://github.com/thanospan/iot-workshop/blob/main/node-red/flows.json).
   
     Note: If the MQTT nodes do not connect to the MQTT broker, change the MQTT broker's address from `host.docker.internal` to the host machine's IP.
 

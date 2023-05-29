@@ -1,4 +1,4 @@
-# FIWARE
+# [FIWARE](https://www.fiware.org/)
 
 ## Usage
 ```
@@ -13,3 +13,6 @@ docker compose up -d
 - Interact with the Context Broker by sending HTTP requests according to the [NGSI-LD API](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/FIWARE/specifications/master/OpenAPI/ngsi-ld/full_api.json).
 
   A Postman collection is provided [here](https://github.com/thanospan/iot-workshop/blob/main/fiware/iot-workshop.postman_collection.json).
+
+## Resources
+Additional resources about the FIWARE ecosystem can be found [here](https://github.com/thanospan/iot-workshop/blob/main/fiware/resources.txt).

@@ -1,8 +1,9 @@
 # [FIWARE](https://www.fiware.org/)
 
 ## Usage
+- Run the containers:
 ```
-cd iot-workshop/fiware
+cd /path/to/iot-workshop/fiware
 docker compose up -d
 ```
 
